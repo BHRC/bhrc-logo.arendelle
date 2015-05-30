@@ -6,6 +6,8 @@
 This code renders a logo of BHRC in any given size. Which is very cool if you want the logo to be bold or light. To run the code you will need to have an [Arendelle Language](http://web.arendelle.org) IDE or Interpreter installed.
 
 
+<br />
+
 ```
 BHRC Logo Maker
 Copyright (c) 2015 Pouya Kary <k@arendelle.org>
