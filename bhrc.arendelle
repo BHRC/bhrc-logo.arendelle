@@ -1,0 +1,81 @@
+//
+// Copyright 2015 Pouya Kary <k@arendelle.org>
+// This code renders a BHRC logo with the size
+// the user gives it. Its very useful when you
+// are trying to get a logo with a desired bo-
+// ldness in mind.
+//
+
+
+/* ─────────────────────────────────────── *
+ * :::::::::: B H R C   L O G O :::::::::: *
+ * ─────────────────────────────────────── */
+
+//
+// FIRST SPACINGS
+// 
+
+[ 15, r ] [ 4 ,  d ]
+
+
+//
+// GETTING THE SIZE
+//
+
+( enterSize , 4 )
+( size , @enterSize * 2 + 1 )
+
+
+//
+// TOP RIGHT
+//
+
+[ @size , pr ] l
+[ @size , pd ] u
+[ @size / 2 + 1, pl ] r
+[ @size / 2, pu ] 
+[ @size / 2 , pl ]
+[ @size / 2 + 1 , pu ] dll
+
+
+//
+// TOP LEFT
+//
+
+[ @size , pd ] u
+[ @size , pl ] r
+[ @size / 2  , pu ]
+[ @size / 2 , pr ]
+[ @size / 2, pu ] 
+[ @size / 2 , pr ]
+
+
+//
+// BOTTOM RIGHT 
+//
+
+[ @size + 1 , rd ]
+[ @size , pl ] r 
+[ @size , pd ] u
+[ @size / 2 , pr ]
+[ @size / 2 , pu ]
+[ @size / 2 , pr ]
+[ @size / 2 , pu ]
+
+
+//
+// BOTTOM LEFT
+//
+
+[ @size  , ld ] u
+[ @size , lp ]
+[ @size , pu ] d
+[ @size / 2 , pr ]
+[ @size / 2 , pd ]
+[ @size / 2 , pr ]
+[ @size / 2 , pd ]
+
+
+//
+// DONE
+//
